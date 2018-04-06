@@ -1,0 +1,40 @@
+{
+  "title": "II. Images: Demystified",
+  "description": "What is a docker image and how to build one.",
+  "details": {
+    "steps": [
+      {
+        "title": "1. Create your first image",
+        "text": "step1.md"
+      },
+      {
+        "title": "2. Start a container from a image",
+        "text": "step2.md"
+      },
+      {
+        "title": "3. A peek inside the layers",
+        "text": "step3.md"
+      },
+      {
+        "title": "4. See clearer with AUFS",
+        "text": "step4.md"
+      },
+      {
+        "title": "5. Public Registry",
+        "text": "step5.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "docker-direct"
+  }
+}
