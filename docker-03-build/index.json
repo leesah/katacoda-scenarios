@@ -30,7 +30,7 @@
       "client": [
         {
           "file": "*",
-          "target": "~/"
+          "target": "~/johnsimage"
         }
       ]
     }
