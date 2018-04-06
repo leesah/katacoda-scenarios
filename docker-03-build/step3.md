@@ -2,6 +2,8 @@
 
 Take a look at our "`Dockerfile.2`":
 
+`cat ~/johnsimage/Dockerfile.2`{{execute}}
+
     FROM alpine:latest
 
     RUN adduser -D johndoe
@@ -31,7 +33,7 @@ Automatic builds are done by the Docker daemon which sometimes run on a remote h
 
 To avoid unnecessary data transfer, it is recommended to employ `.dockerignore`.
 
-`echo "lackask.txt" > .dockerignore`{{execute}}
+`echo "lackask.txt" > ~/johnsimage/.dockerignore`{{execute}}
 
 `docker build -t johnsimage:auto --file ~/johnsimage/Dockerfile.2 ~/johnsimage/`{{execute}}
 
