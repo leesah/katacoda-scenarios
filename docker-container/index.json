@@ -1,0 +1,36 @@
+{
+  "title": "I. Container: First Contact",
+  "description": "Create a container and see what's in it.",
+  "details": {
+    "steps": [
+      {
+        "title": "1. Create your first container",
+        "text": "step1.md"
+      },
+      {
+        "title": "2. Cgroup \u0026 PID namespace",
+        "text": "step2.md"
+      },
+      {
+        "title": "3. File system",
+        "text": "step3.md"
+      },
+      {
+        "title": "4. Network namespace",
+        "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "docker-direct"
+  }
+}
