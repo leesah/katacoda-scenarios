@@ -1,9 +1,13 @@
-A container can be run connected to a specific network. When multiple containers connect to the same network, the containers share the same network namespace and thus can communicate with each other by means of IP address or name.
+Kill the container (`Ctrl-C`), and start a new one. This time we publish the service to the outer world:
 
-One special network worth mentioning here is the `host`. When a container is run with `--network=host`, it runs in the same network namespace as the host does.
+`docker run --rm -ti --publish 80:80 python:latest python -m http.server 80`{{execute}}
 
-`docker run --rm -ti --network=host python:latest python -m http.server 80`{{execute}}
+Now visit port `80` on the host again ([click here](https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/)).
 
-It can be another way to publish our HTTP service to the outside because the port `80` will be bound to the host's network interfaces.
+You should see a list of directories inside the container, which is the default behavior of the HTTP server.
 
-But apparently we'll lose the ability to remap the port, not to mention the isolation Docker is meant to provide.
+The `--publish` argument of `docker run` publish a container’s port to the host.
+
+Further more, the `--publish` argument allows the port to be remapped upon running, while the program itself doesn't need to know about it.
+
+Try `docker run --rm -ti --publish 8080:80 python:latest python -m http.server 80`{{execute}} and this time visit port `8080` ([click here](https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/)).

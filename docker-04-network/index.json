@@ -4,12 +4,16 @@
   "details": {
     "steps": [
       {
-        "title": "1. Port publishing",
+        "title": "1. Network isolation",
         "text": "step1.md"
       },
       {
-        "title": "2. Network namespace",
+        "title": "2. Port publishing",
         "text": "step2.md"
+      },
+      {
+        "title": "3. Network namespace",
+        "text": "step3.md"
       }
     ],
     "intro": {
