@@ -1,0 +1,28 @@
+{
+  "title": "IV. Network: Service Publishing",
+  "description": "Run a service in a container and make it accessible from outside",
+  "details": {
+    "steps": [
+      {
+        "title": "1. Port publishing",
+        "text": "step1.md"
+      },
+      {
+        "title": "2. Network namespace",
+        "text": "step2.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "docker-direct"
+  }
+}
