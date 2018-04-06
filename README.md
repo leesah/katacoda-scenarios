@@ -4,4 +4,4 @@
 
 Visit https://www.katacoda.com/sah to view my profile and interactive scenarios
 
-The `docker-*` scenarios are inspired by @larrycai 's **Learn Docker in 90 minutes** training.
+The `docker-*` scenarios are inspired by [@larrycai](https://github.com/larrycai)'s **Learn Docker in 90 minutes** training.
