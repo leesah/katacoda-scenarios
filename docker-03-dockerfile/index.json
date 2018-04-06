@@ -30,7 +30,7 @@
       "host01": [
         {
           "file": "*",
-          "target": "~/johnsimage"
+          "target": "~/"
         }
       ]
     }
